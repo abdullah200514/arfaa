@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centered Image with Caption</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #f4f4f4, #dfe9f3);
+      color: #333;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .image-box img {
+      width: 300px;
+      max-width: 90%;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      animation: zoomIn 1.2s ease-out;
+    }
+
+    .caption {
+      margin-top: 20px;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #2c3e50;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-box">
+      <img src="C:\Users\abdul\Downloads\for website.jpg" alt="Centered Image" />
+    </div>
+    <div class="caption">
+      A person should be man enough to deal with you
+    </div>
+  </div>
+</body>
+</html>
